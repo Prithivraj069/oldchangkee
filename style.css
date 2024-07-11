@@ -54,17 +54,44 @@ body {
   padding: 25px;
 }
 
+.landingPage-content{
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.card-categries {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  background-color: none;
+  border: none;
+  width: 31%;
+  border-radius: none ;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+
+  
+
+.card-img, .card-img-bottom, .card-img-top {
+  height: 27vh; 
+}
+
+
 /* footer css */
 
-.main-page-footer {
-  /* width: 100vw; */
-  height: 60vh;
-  background-color: rgb(77, 72, 72);
-  padding-top: 10px;
-}
-
-/* footer */
-
-.logo-certificate {
-  padding: 15px;
-}
