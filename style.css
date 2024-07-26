@@ -116,13 +116,23 @@ body{
   transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-
-  
-
 .card-img, .card-img-bottom, .card-img-top {
   height: 27vh; 
 }
 
+/* spices css */
+.spice-text p {
+  padding: 15px 5px 15px 5px;
+  color: rgb(0, 0, 0);
+  font-size: medium;
+}
 
-/* footer css */
 
+.active { 
+  color: white;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #fff700;
+}
