@@ -22,6 +22,9 @@
             margin-bottom: 10px;
             text-decoration: none;
         }
+        
+      
+       
     </style>
 </head>
 
@@ -36,53 +39,51 @@
         </div>
     </div>
 
-    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
-        <!-- <a class="navbar-brand" href="our-product.html">Our Products</a> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="our-product.html">Our Product</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="betterPuff.html">The Better Puff</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="spices.html">Our Spices</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutUs.html">Our Heritage</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutUs.html">Awards</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Outlets</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Contact Us</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="our-product.html">Our Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="betterPuff.html">The Better Puff</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="spices.html">Our Spices</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Our Heritage</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Outlets</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
-    </nav>
-    <div class="container">
+      </nav>
+    
+      <div class="container">
         <div class="row">
-            <nav class="navbar mt-3 rounded navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="navbar mt-3 rounded navbar-expand-lg navbar-dark bg-dark non-mobile">
+                <div class="navbar-nav" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="custom-link" href="#" id="traditional-favourites">Traditional Favourites</a>
@@ -108,10 +109,26 @@
                     </ul>
                 </div>
             </nav>
+
+            <nav class="navbar mt-3 rounded navbar-expand-lg navbar-dark bg-dark mobile">
+                <div class="navbar-nav" id="navbarNav">
+                    <select class="form-select text-white bg-dark border-0" id="navSelect">
+                        <option value="traditional-cards">Traditional Favourites</option>
+                        <option value="seafood-cards">Seafood Favourites</option>
+                        <option value="chicken-cards">Chicken Favourites</option>
+                        <option value="desserts-cards">Desserts</option>
+                        <option value="ourbrand-cards">Our Brand</option>
+                        <option value="breakfastset-cards">Breakfast Set</option>
+                        <option value="catering-cards">Catering</option>
+                    </select>
+                </div>
+            </nav>
+            
+            
     
             <div class="container mt-4">
                 <div class="row card-category" id="traditional-cards">
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="img\products\traditional-favorites\1.jpeg" alt="Old Chang Kee Traditional Favorites">
                             <div class="card-body">
@@ -122,7 +139,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="img\products\traditional-favorites\2.jpeg" alt="Our Products">
                             <div class="card-body">
@@ -132,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="img\products\traditional-favorites\3.jpeg" alt="Our Products">
                             <div class="card-body">
@@ -145,7 +162,7 @@
                 </div>
     
                 <div class="row card-category" id="seafood-cards">
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -155,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -165,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -178,7 +195,7 @@
                 </div>
     
                 <div class="row card-category" id="chicken-cards">
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -188,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -198,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -211,7 +228,7 @@
                 </div>
     
                 <div class="row card-category" id="desserts-cards">
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -221,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -231,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -244,7 +261,7 @@
                 </div>
     
                 <div class="row card-category" id="ourbrand-cards">
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -254,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -264,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -277,7 +294,7 @@
                 </div>
     
                 <div class="row card-category" id="breakfastset-cards">
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -287,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -297,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -310,7 +327,7 @@
                 </div>
     
                 <div class="row card-category" id="catering-cards">
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -320,7 +337,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -330,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
                         <div class="card bg-dark w-100">
                             <img class="card-img-top" src="/img/slider3.jpg" alt="Our Products">
                             <div class="card-body">
@@ -348,24 +365,7 @@
    
     
     
-    <script>
-        const navLinks = document.querySelectorAll('.navbar-nav .custom-link');
-        const cardCategories = document.querySelectorAll('.card-category');
     
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const category = this.id.replace('-favourites', '-cards');
-                cardCategories.forEach(cards => {
-                    if (cards.id === category) {
-                        cards.style.display = 'flex';
-                    } else {
-                        cards.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark mt-4 text-muted">
@@ -459,19 +459,13 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-        </script>
-    <script src="script.js"></script>
-
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+<script src="script.js"></script>
 </body>
 
 </html>
