@@ -148,6 +148,8 @@ a:visited {
   color:red;
 }
 
-/* .model .modal-dialog .modal-body h4, p {
-  color: black;
-} */
+.franchise-content {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
