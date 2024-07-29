@@ -138,9 +138,6 @@ body {
   font-weight: bold;
 }
 
-a:visited {
-  color: #fff700;
-}
 
 .franchise-dialog h4{
   color:red;
@@ -161,14 +158,7 @@ a:visited {
 }
 
 
-.active { 
-  color: white;
-  font-weight: bold;
-}
 
-a:visited {
-  color: #fff700;
-}
 
 .toggle-button{
   display: none;
@@ -176,4 +166,13 @@ a:visited {
 
 .card-category {
   display: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex: 1;
 }
