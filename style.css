@@ -3,18 +3,15 @@ body {
   height: 100%;
   background-color: #f39406f3;
 }
-
 body {
   color: #fff;
   /*   
    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
 }
-
 .cover-container {
   max-width: 42em;
 }
-
 .logo-box {
   /* width: 100vw; */
   height: 75px;
@@ -25,18 +22,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
 /*
  * Header
  */
 .masthead {
   margin-bottom: 2rem;
 }
-
 .masthead-brand {
   margin-bottom: 0;
 }
-
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
   font-weight: 700;
@@ -44,21 +38,17 @@ body {
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
 }
-
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255, 255, 255, 0.25);
 }
-
 .nav-masthead .nav-link + .nav-link {
   margin-left: 1rem;
 }
-
 .logo-box .halal-logo img {
   height: 70px;
   width: 70px;
 }
-
 @media only screen and (max-width: 425px) {
   .logo-box {
     height: 10vh;
@@ -71,13 +61,10 @@ body {
     width: 40px;
   }
 }
-
 /* carousel css*/
-
 #carouselExampleControls {
   padding: 25px;
 }
-
 .landingPage-content {
   padding: 30px;
   display: flex;
@@ -85,7 +72,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .card-categries {
   padding: 20px 20px 20px 20px;
   display: flex;
@@ -94,7 +80,6 @@ body {
   flex-wrap: wrap;
   gap: 10px;
 }
-
 .card {
   background-color: none;
   border: none;
@@ -102,47 +87,45 @@ body {
   border-radius: none;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .card:hover {
   transform: scale(1.1);
   transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
-
-.card-img, .card-img-bottom, .card-img-top {
-  height: 20vh; 
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  height: 27vh;
 }
-
 /* .card-text {
   white-space: nowrap;
   overflow: hidden;
  text-overflow: ellipsis;
 } */
-
 .card-content {
   display: -webkit-box;
   -webkit-box-orient: vertical;
- 
+  -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 /* spices css */
 .spice-text p {
   padding: 15px 5px 15px 5px;
   color: rgb(0, 0, 0);
   font-size: medium;
 }
-
 .active {
   color: white;
   font-weight: bold;
 }
 
-
 .franchise-dialog h4{
   color:red;
 }
 
+/* .model .modal-dialog .modal-body h4, p {
+  color: black;
+} */
 .franchise-content {
   padding: 20px;
   border: 1px solid black;
@@ -150,65 +133,13 @@ body {
 }
 
 
-/* spices css */
-.spice-text p {
-  padding: 15px 5px 15px 5px;
-  color: rgb(0, 0, 0);
-  font-size: medium;
-}
-
-
-
-
 .toggle-button{
   display: none;
 }
 
-.card-category {
-  display: none;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 
-.card-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-text {
-  flex: 1;
-}
 .mobile{
   display: none;
 }
 
 
-@media (max-width: 991px) {
-  .col-sm-6 {
-    width: 200px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-  .card-text {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-  .non-mobile {
-    display: none;
-  }
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .card-body > *:not(.card-title):not(.btn) {
-    display: none;
-  }
-}
